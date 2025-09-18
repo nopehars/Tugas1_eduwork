@@ -3,111 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <title>Profile Biodata</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 30px;
-      }
-      td {
-        border: 1px solid #ddd;
-        padding: 15px;
-        text-align: center;
-      }
-      .menu td {
-        background-color: #333;
-        color: white;
-        font-weight: bold;
-      }
-      .judul {
-        font-size: 28px;
-        font-weight: bold;
-        text-align: left;
-      }
-      .biodata td {
-        width: 33%;
-        background-color: #f9f9f9;
-      }
-      .portfolio td {
-        background-color: #fafafa;
-      }
-      img {
-        max-width: 200px;
-        border-radius: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Section 1: Menu -->
-    <table class="menu">
-      <tr>
-        <td>Home</td>
-        <td>About</td>
-        <td>Biodata</td>
-        <td>Portfolio</td>
-        <td>Contact</td>
-      </tr>
-    </table>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Biodata</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- Section 2: Judul + Gambar -->
-    <table>
-      <tr>
-        <td class="judul">Halo, Saya Nova<br />Harsanto Arroyhan</td>
-        <td>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
-            alt="Foto Profil"
-          />
-        </td>
-      </tr>
-    </table>
+    <section class="hero">
+      <div class="text">
+        <h1>Halo, Saya Nova<br />Harsanto Arroyhan</h1>
+        <p>
+          Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks,
+          kolom kanan berisi gambar.
+        </p>
+        <button>Pelajari Lebih Lanjut</button>
+      </div>
+      <div class="image">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+          alt="Foto Profil"
+        />
+      </div>
+    </section>
 
-    <!-- Section 3: Biodata dengan 6 Box -->
-    <table class="biodata">
-      <tr>
-        <td>Nama: Nova HArsanto Arroyhan</td>
-        <td>Profesi: Software Engineer</td>
-        <td>Bahasa: Multilingual</td>
-      </tr>
-      <tr>
-        <td>Keahlian: Coding & Writing</td>
-        <td>Hobi: Belajar & Menjawab</td>
-        <td>Asal: Yogyakarta</td>
-      </tr>
-    </table>
+    <!-- Section 3: Biodata -->
+    <section class="biodata">
+      <div class="box">Nama: Nova Harsanto Arroyhan</div>
+      <div class="box">Profesi: Software Engineer</div>
+      <div class="box">Bahasa: Multilingual</div>
+      <div class="box">Keahlian: Coding & Writing</div>
+      <div class="box">Hobi: Belajar & Menjawab</div>
+      <div class="box">Asal: Yogyakarta</div>
+    </section>
 
-    <!-- Section 4: Portofolio -->
-    <table class="portfolio">
-      <tr>
-        <td colspan="3" style="font-size: 22px; font-weight: bold">
-          Portofolio
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Project 1"
-          /><br />Project 1
-        </td>
-        <td>
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Project 2"
-          /><br />Project 2
-        </td>
-        <td>
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Project 3"
-          /><br />Project 3
-        </td>
-      </tr>
-    </table>
+    <!-- Section 4: Portfolio -->
+    <section class="portfolio">
+      <h2>Portofolio</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="https://via.placeholder.com/150" alt="Project 1" />
+          <p>Project 1</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/150" alt="Project 2" />
+          <p>Project 2</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/150" alt="Project 3" />
+          <p>Project 3</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
